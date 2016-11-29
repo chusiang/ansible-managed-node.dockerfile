@@ -2,9 +2,12 @@
 
 A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python_official] for [Ansible][ansible_offical].
 
+> WARNING: This docker image can be access with ssh by [*chusiang/ansible-jupyter*][ansible_jupyter] image. Do not use it on the Production Environment, please.
+
 [openssh_official]: https://www.openssh.com/
 [ansible_offical]:  https://www.ansible.com/
-[python_official]:  https://www.python.org
+[python_official]:  https://www.python.org/
+[ansible_jupyter]: https://hub.docker.com/r/chusiang/ansible-jupyter/
 
 ## Supported tags and respective `Dockerfile` links
 
