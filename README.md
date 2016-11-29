@@ -4,6 +4,13 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 
 > WARNING: This docker image can be access with ssh by [*chusiang/ansible-jupyter*][ansible_jupyter] image. Do not use it on the Production Environment, please.
 
+Account info:
+
+|           | username | password |
+|-----------+----------+----------|
+| root user | root     | root     |
+| sudo user | docker   | docker   |
+
 [openssh_official]: https://www.openssh.com/
 [ansible_offical]:  https://www.ansible.com/
 [python_official]:  https://www.python.org/
@@ -12,6 +19,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 ## Supported tags and respective `Dockerfile` links
 
 - `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
+- `centos-6` [*(centos-7/Dockerfile)*][dockerfile_centos-6]
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
@@ -25,6 +33,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 
 [dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
 [dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
+[dockerfile_centos-6]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-6/Dockerfile
 [dockerfile_centos-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-7/Dockerfile
 [dockerfile_debian-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-7/Dockerfile
 [dockerfile_debian-8]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-8/Dockerfile
