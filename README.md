@@ -9,25 +9,26 @@ A Docker image of run [OpenSSH][openssh_official] daemon and [Python][python_off
 
 ## Supported tags and respective `Dockerfile` links
 
-<!-- 
 - `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
+- `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
+
+<!-- 
 - `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
 - `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
-- `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1] -->
-- `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
+- `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
+-->
 
-
-[dockerfile_alpine]:        https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/alpine/Dockerfile
-[dockerfile_archlinux]:        https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/archlinux/Dockerfile
-[dockerfile_centos-7]:      https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/centos-7/Dockerfile
-[dockerfile_debian-7]:      https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/debian-7/Dockerfile
-[dockerfile_debian-8]:      https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/debian-8/Dockerfile
-[dockerfile_gentoo]:        https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/gentoo/Dockerfile
-[dockerfile_opensuse-42.1]:  https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/opensuse-42.1/Dockerfile
-[dockerfile_ubuntu-14.04]:  https://github.com/chusiang/ansible-jupyter.dockerfile/blob/master/ubuntu-14.04/Dockerfile
+[dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
+[dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
+[dockerfile_centos-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-7/Dockerfile
+[dockerfile_debian-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-7/Dockerfile
+[dockerfile_debian-8]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-8/Dockerfile
+[dockerfile_gentoo]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/gentoo/Dockerfile
+[dockerfile_opensuse-42.1]: https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/opensuse-42.1/Dockerfile
+[dockerfile_ubuntu-14.04]:  https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/ubuntu-14.04/Dockerfile
 
 ## Build image
 
@@ -80,3 +81,7 @@ A Docker image of run [OpenSSH][openssh_official] daemon and [Python][python_off
     ```
 
 Enjoy it !
+
+## License
+
+Copyright (c) chusiang from 2016 under the MIT license.
