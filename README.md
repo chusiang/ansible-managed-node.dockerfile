@@ -4,18 +4,6 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 
 > WARNING: This docker image can be access with ssh by [*chusiang/ansible-jupyter*][ansible_jupyter] image. Do not use it on the Production Environment, please.
 
-Account info:
-
-|           | username | password |
-|-----------+----------+----------|
-| root user | root     | root     |
-| sudo user | docker   | docker   |
-
-[openssh_official]: https://www.openssh.com/
-[ansible_offical]:  https://www.ansible.com/
-[python_official]:  https://www.python.org/
-[ansible_jupyter]: https://hub.docker.com/r/chusiang/ansible-jupyter/
-
 ## Supported tags and respective `Dockerfile` links
 
 - `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
@@ -40,6 +28,23 @@ Account info:
 [dockerfile_gentoo]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/gentoo/Dockerfile
 [dockerfile_opensuse-42.1]: https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/opensuse-42.1/Dockerfile
 [dockerfile_ubuntu-14.04]:  https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/ubuntu-14.04/Dockerfile
+
+## Account
+
+**root** user:
+
+- username: `root`
+- password: `root`
+
+**sudo** user:
+
+- username: `docker`
+- password: `docker`
+
+[openssh_official]: https://www.openssh.com/
+[ansible_offical]:  https://www.ansible.com/
+[python_official]:  https://www.python.org/
+[ansible_jupyter]: https://hub.docker.com/r/chusiang/ansible-jupyter/
 
 ## Build image
 
