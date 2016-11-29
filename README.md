@@ -7,6 +7,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 ## Supported tags and respective `Dockerfile` links
 
 - `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
+- `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `centos-6` [*(centos-7/Dockerfile)*][dockerfile_centos-6]
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
@@ -15,7 +16,6 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 - `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
 
 <!-- 
-- `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
 -->
 
