@@ -1,19 +1,22 @@
-FROM ubuntu:14.04
+FROM centos:7
 
 MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 
 # Update the index of available packages.
-RUN apt-get update
+RUN yum update -y
 
 # Install the requires package.
-RUN apt-get install -y openssh-server python sudo curl wget bash-completion openssl \
+RUN yum install -y openssh-server openssh-clients python sudo curl wget bash-completion openssl \
       && \
-      apt-get clean
+      yum clean all
 
 # Setting the sshd.
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
-RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+#RUN sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# Generate the ssh host keys.
+RUN ssh-keygen -A
 
 # SSH login fix. Otherwise user is kicked off after login
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
