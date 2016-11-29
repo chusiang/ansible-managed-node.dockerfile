@@ -6,18 +6,19 @@ A Docker image of run [OpenSSH][openssh_official] daemon and [Python][python_off
 [ansible_offical]:  https://www.ansible.com/
 [python_official]:  https://www.python.org
 
-
 ## Supported tags and respective `Dockerfile` links
 
-<!-- 
 - `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
+- `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
+
+<!-- 
 - `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
 - `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
 - `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1] -->
-- `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
+-->
 
 [dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
 [dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
@@ -74,8 +75,8 @@ A Docker image of run [OpenSSH][openssh_official] daemon and [Python][python_off
 1. Enter container with command line.
 
     ```
-    $ docker exec -it ansible-managed-node sh
-    / #
+    $ docker exec -it ansible-managed-node bash
+    bash-4.3# 
     ```
 
 Enjoy it !
