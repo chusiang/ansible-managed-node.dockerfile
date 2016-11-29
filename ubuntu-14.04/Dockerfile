@@ -6,7 +6,7 @@ MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 RUN apt-get update
 
 # Install the requires package.
-RUN apt-get install -y openssh-server python2.7 sudo curl wget \
+RUN apt-get install -y openssh-server python sudo curl wget \
       && \
       apt-get clean
 
