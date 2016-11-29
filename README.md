@@ -12,12 +12,9 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
+- `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
 - `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
 - `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
-
-<!-- 
-- `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
--->
 
 [dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
 [dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
