@@ -23,12 +23,12 @@ Account info:
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
+- `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
 - `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
 
 <!-- 
 - `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
-- `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
 -->
 
 [dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
