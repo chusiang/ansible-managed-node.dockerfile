@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:8
 
 MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 
@@ -6,7 +6,7 @@ MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 RUN apt-get update
 
 # Install the requires package.
-RUN apt-get install -y openssh-server python sudo curl wget bash-completion \
+RUN apt-get install -y openssh-server python sudo openssl curl wget bash-completion \
       && \
       apt-get clean
 
