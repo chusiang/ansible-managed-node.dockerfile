@@ -14,7 +14,7 @@ RUn eselect python set 1
 # Setting the sshd.
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
-RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # Generate the ssh host keys.
 RUN ssh-keygen -A
@@ -38,7 +38,6 @@ RUN echo 'docker ALL=(ALL)   ALL' >> /etc/sudoers
 # Setting ssh public key.
 RUN wget https://raw.githubusercontent.com/chusiang/ansible-jupyter.dockerfile/master/files/ssh/id_rsa.pub \
       -O /tmp/authorized_keys && \
-      mkdir /home/docker/.ssh && \
       mv /tmp/authorized_keys /home/docker/.ssh/ && \
       chown -R docker:docker /home/docker/.ssh/ && \
       chmod 644 /home/docker/.ssh/authorized_keys && \
