@@ -6,7 +6,7 @@ MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 RUN emerge --sync
 
 # Install the requires portage package and python.
-RUN emerge openssh
+RUN USE="-ldap" emerge openssh
 RUN emerge sudo bash-completion gentoolkit python:2.7 net-misc/curl wget
 
 # switch python to v2.7.
