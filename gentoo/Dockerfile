@@ -9,7 +9,7 @@ RUN emerge --sync
 RUN emerge openssh python:2.7 sudo net-misc/curl wget bash-completion gentoolkit 
 
 # switch python to v2.7.
-RUn eselect python set 1
+RUN eselect python set 1
 
 # Setting the sshd.
 RUN mkdir /var/run/sshd
