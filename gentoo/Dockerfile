@@ -6,7 +6,7 @@ MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 RUN emerge --sync
 
 # Install the requires portage package and python.
-RUN emerge python:2.7 sudo net-misc/curl wget bash-completion gentoolkit
+RUN emerge python:2.7 dev-python/pip sudo net-misc/curl wget bash-completion gentoolkit
 
 # switch python to v2.7.
 RUN eselect python set 1
