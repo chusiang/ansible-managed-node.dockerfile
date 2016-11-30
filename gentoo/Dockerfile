@@ -6,13 +6,23 @@ MAINTAINER Chu-Siang Lai <chusiang@drx.tw>
 RUN emerge --sync
 
 # Install the requires portage package and python.
-RUN emerge sudo bash-completion gentoolkit python:2.7 net-misc/curl wget
+RUN emerge python:2.7 sudo net-misc/curl wget bash-completion gentoolkit
 
 # switch python to v2.7.
 RUN eselect python set 1
 
-# Install openssh server.
-RUN emerge net-misc/openssh
+# Upgrade the pip to lastest.
+RUN pip install -U pip
+
+# Setup the ansible.
+RUN pip install ansible
+
+# for disable localhost warning message.
+RUN mkdir /etc/ansible && \
+      /bin/echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+
+# install openssh with ansible.
+RUN ansible localhost -m portage -a 'package=openssh state=present' -vvvv 
 
 # Setting the sshd.
 RUN mkdir /var/run/sshd
