@@ -27,7 +27,7 @@ RUN adduser -s /bin/bash -D docker && \
       echo 'docker:docker' | chpasswd
 
 # Add sudo permission.
-RUN echo 'docker ALL=(ALL)   ALL' >> /etc/sudoers
+RUN echo 'docker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 # Setting ssh public key.
 RUN wget https://raw.githubusercontent.com/chusiang/ansible-jupyter.dockerfile/master/files/ssh/id_rsa.pub \
