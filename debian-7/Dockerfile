@@ -29,7 +29,7 @@ RUN useradd --create-home --shell /bin/bash \
       --password $(openssl passwd -1 docker) docker
 
 # Add sudo permission.
-RUN echo 'docker ALL=(ALL)   ALL' >> /etc/sudoers
+RUN echo 'docker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 # Setting ssh public key.
 RUN wget https://raw.githubusercontent.com/chusiang/ansible-jupyter.dockerfile/master/files/ssh/id_rsa.pub \
