@@ -1,5 +1,7 @@
 # Docker image: Ansible Managed Node
 
+[![Docker Hub](https://img.shields.io/badge/docker-ansible--managed--node-blue.svg)](https://hub.docker.com/r/chusiang/ansible-managed-node/) [![microbadger](https://images.microbadger.com/badges/image/chusiang/ansible-managed-node.svg)](https://microbadger.com/images/chusiang/ansible-managed-node "Get your own image badge on microbadger.com")
+
 A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python_official] for [Ansible][ansible_offical].
 
 > WARNING: This docker image can be access with ssh by [*chusiang/ansible-jupyter*][ansible_jupyter] image. Do not use it on the Production Environment, please.
