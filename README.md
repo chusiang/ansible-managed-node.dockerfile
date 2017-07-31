@@ -15,6 +15,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 - `gentoo` [*(gentoo/Dockerfile)*][dockerfile_gentoo]
 - `opensuse-42.1` [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
 - `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
+- `ubuntu-16.04` [*(ubuntu-16.04/Dockerfile)*][dockerfile_ubuntu-16.04]
 
 [dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
 [dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
@@ -25,6 +26,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 [dockerfile_gentoo]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/gentoo/Dockerfile
 [dockerfile_opensuse-42.1]: https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/opensuse-42.1/Dockerfile
 [dockerfile_ubuntu-14.04]:  https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/ubuntu-14.04/Dockerfile
+[dockerfile_ubuntu-16.04]:  https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/ubuntu-16.04/Dockerfile
 
 ## Account
 
