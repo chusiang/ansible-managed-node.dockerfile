@@ -6,7 +6,8 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 
 ## Supported tags and respective `Dockerfile` links
 
-- `alpine-3.4`, `latest` [*(alpine/Dockerfile)*][dockerfile_alpine]
+- `alpine-3.4` [*(alpine-3.4/Dockerfile)*][dockerfile_alpine-3.4]
+- `alpine-3.6`, `latest` [*(alpine-3.6/Dockerfile)*][dockerfile_alpine-3.6]
 - `archlinux` [*(archlinux/Dockerfile)*][dockerfile_archlinux]
 - `centos-6` [*(centos-7/Dockerfile)*][dockerfile_centos-6]
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
@@ -19,7 +20,8 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 - `ubuntu-14.04` [*(ubuntu-14.04/Dockerfile)*][dockerfile_ubuntu-14.04]
 - `ubuntu-16.04` [*(ubuntu-16.04/Dockerfile)*][dockerfile_ubuntu-16.04]
 
-[dockerfile_alpine]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine/Dockerfile
+[dockerfile_alpine-3.4]:    https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine-3.4/Dockerfile
+[dockerfile_alpine-3.6]:    https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/alpine-3.6/Dockerfile
 [dockerfile_archlinux]:     https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/archlinux/Dockerfile
 [dockerfile_centos-6]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-6/Dockerfile
 [dockerfile_centos-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-7/Dockerfile
@@ -103,4 +105,4 @@ Enjoy it !
 
 ## License
 
-Copyright (c) chusiang from 2016 under the MIT license.
+Copyright (c) chusiang from 2016-2017 under the MIT license.
