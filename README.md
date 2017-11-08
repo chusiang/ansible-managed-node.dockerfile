@@ -13,6 +13,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 - `centos-7` [*(centos-7/Dockerfile)*][dockerfile_centos-7]
 - `debian-7` [*(debian-7/Dockerfile)*][dockerfile_debian-7]
 - `debian-8` [*(debian-8/Dockerfile)*][dockerfile_debian-8]
+- `debian-9` [*(debian-9/Dockerfile)*][dockerfile_debian-9]
 - ~~`gentoo`~~ [*(gentoo/Dockerfile)*][dockerfile_gentoo]
 - ~~`opensuse-42.1`~~ [*(opensuse-42.1/Dockerfile)*][dockerfile_opensuse-42.1]
 - `opensuse-42.2` [*(opensuse-42.2/Dockerfile)*][dockerfile_opensuse-42.2]
@@ -27,6 +28,7 @@ A Docker image of run the [OpenSSH][openssh_official] daemon and [Python][python
 [dockerfile_centos-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/centos-7/Dockerfile
 [dockerfile_debian-7]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-7/Dockerfile
 [dockerfile_debian-8]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-8/Dockerfile
+[dockerfile_debian-9]:      https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/debian-9/Dockerfile
 [dockerfile_gentoo]:        https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/gentoo/Dockerfile
 [dockerfile_opensuse-42.1]: https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/opensuse-42.1/Dockerfile
 [dockerfile_opensuse-42.2]: https://github.com/chusiang/ansible-managed-node.dockerfile/blob/master/opensuse-42.2/Dockerfile
