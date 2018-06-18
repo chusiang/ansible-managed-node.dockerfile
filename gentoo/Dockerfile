@@ -22,7 +22,7 @@ RUN mkdir /etc/ansible && \
       /bin/echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
 # install openssh with ansible.
-RUN ansible localhost -m portage -a 'package=openssh state=present' -vvvv 
+RUN ansible localhost -m portage -a 'package=openssh state=present' -vvvv
 
 # Setting the sshd.
 RUN mkdir /var/run/sshd
