@@ -16,7 +16,7 @@ RUN echo 'root:root' | chpasswd
 #RUN sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # Generate the ssh host keys.
-RUN ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' 
+RUN ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
 
 # SSH login fix. Otherwise user is kicked off after login
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
@@ -32,7 +32,7 @@ RUN useradd --create-home --shell /bin/bash \
       --password $(openssl passwd -1 docker) docker
 
 # Add sudo permission.
-RUN echo 'docker ALL=(ALL)   ALL' >> /etc/sudoers
+RUN echo 'docker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 # Setting ssh public key.
 RUN wget https://raw.githubusercontent.com/chusiang/ansible-jupyter.dockerfile/master/files/ssh/id_rsa.pub \

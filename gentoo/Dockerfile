@@ -22,7 +22,7 @@ RUN mkdir /etc/ansible && \
       /bin/echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 
 # install openssh with ansible.
-RUN ansible localhost -m portage -a 'package=openssh state=present' -vvvv 
+RUN ansible localhost -m portage -a 'package=openssh state=present' -vvvv
 
 # Setting the sshd.
 RUN mkdir /var/run/sshd
@@ -46,7 +46,7 @@ RUN useradd --create-home --shell /bin/bash \
       --password $(openssl passwd -1 docker) docker
 
 # Add sudo permission.
-RUN echo 'docker ALL=(ALL)   ALL' >> /etc/sudoers
+RUN echo 'docker ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 # Setting ssh public key.
 RUN wget https://raw.githubusercontent.com/chusiang/ansible-jupyter.dockerfile/master/files/ssh/id_rsa.pub \
